@@ -1,4 +1,4 @@
-package com.jearyc.odinsstudy;
+package com.robertrice.odinsstudy;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,0 +1,98 @@
+/* This is my css for the project */
+
+@charset "ISO-8859-1";
+@import url('https://fonts.googleapis.com/css2?family=Texturina:wght@600&display=swap');
+
+h1, h3{
+    font-family: 'Texturina', serif;
+}
+
+nav{
+    width: 100%;
+}
+form{
+    margin: 0 auto;
+    width: 500px;
+    padding: 1em;
+    border: 1px solid darkgray;
+    border-radius: 1em;
+}
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+form li + li {
+    margin-top: 1em;
+}
+label{
+    display: inline-block;
+    width: 130px;
+    text-align: right;
+}
+input, textarea{
+    font: 1em sans-serif;
+    width: 300px;
+    box-sizing: border-box;
+    border: 1px solid darkgray
+}
+input:focus, textarea:focus {
+    border-color: #000;
+}
+textarea{
+    vertical-align: top;
+    height: 5em;
+}
+
+.hidden{
+	display: none;
+}
+
+.button{
+    margin-left: 134px;
+}
+
+button{
+    margin-left: .5em;
+}
+
+#mainContainer{
+    margin: 3em;
+}
+#header{
+    background-color: slategray;
+    height: 7em;
+    width: 100%;
+    padding: .5em;
+    display: flex;
+    align-items: center;
+}
+.profile-image{
+    width: 6em;
+    height: 6em;
+    background-image: url(./../images/profile.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.img-Container{
+    width: 6.4em;
+    height: 6.4em;
+}
+
+#headerULList{
+    display: flex;
+    align-content: space-between;
+    justify-content: space-between;
+}
+
+@media (max-width: 750px){
+    form{
+        overflow: scroll;
+    }
+}
+@media (max-width: 400px){
+    .img-Container{
+        display: none;
+    }
+}
